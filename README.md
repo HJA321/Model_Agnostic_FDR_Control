@@ -1,6 +1,7 @@
 # Model-Agnostic FDR Control
 
 This repository is the code repository for NeurIPS 2026 paper: Model-Agnostic FDR Control via Group Gaussian Mirror and Permutation SHAP.
+
 If using this repository, please cite:
 Han, J., Chen, J., & Fu, Y. (2026). Model-Agnostic FDR Control via Group Gaussian Mirror and Permutation SHAP. ArXiv, abs/2608.00989.
 
@@ -10,14 +11,7 @@ Mirror (PSGM), including synthetic simulations.
 
 ## Environment
 
-Use Python 3.10. The pinned direct dependencies match a previously tested
-environment; a clean installation and full-scale GPU runs remain to be verified.
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-```
+We recommend Python 3.10 and PyTorch 2.6. The versions in requirements.txt provide a reference environment; matching the exact Python patch version or CUDA build is not required. CPU execution is supported, while NVIDIA GPU users should install a PyTorch build compatible with their driver. Run python -m pip check after installation, and execute all scripts from the repository root. Small-scale runs can use a CPU, but the default simulation settings are computationally intensive.
 
 ## Running from the repository root
 
